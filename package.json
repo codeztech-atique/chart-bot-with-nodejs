@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A real-time chat application",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run start",
+    "build": "cd client && npm install && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d client/build"
+  },
+  "keywords": [],
+  "author": "Ankit Kumar Pandit",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
